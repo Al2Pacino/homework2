@@ -1,0 +1,63 @@
+
+/*实现Cmn，即输入两个数字，得到结果*/
+#include<iostream.h>
+
+
+void main()
+{
+int x, y;
+cin>>x>>y;
+void plus(int x,int y);
+ plus(x,y);
+
+}
+void plus(int x,int y)
+{
+int f,g,h;
+h=y;
+for(f=1;y>=1;y--)
+{
+
+f=f*x;
+x--;
+}
+for(g=1;h!=1;h--)
+{
+
+g=h*g;
+}
+cout<<f/g;
+
+}
+***************************************************
+/*递归求m的n次方*/
+
+#include<iostream.h>
+void main()
+{
+int x,y;
+cin>>x>>y;
+int f(int a,int b);
+cout<<f(x,y);
+}
+int f(int a,int b)
+{
+	int c;
+	if(b==1)
+	  c=a;
+    else
+
+	  c=a*f(a,b-1);
+	return c;
+ 
+}
+*********************************************
+/*求得由华氏到摄氏的转换*/
+
+	#include<iostream.h>
+void main()
+{
+	double x;
+	cin>>x;
+    cout<<double(5)/9*(x-32);
+}
